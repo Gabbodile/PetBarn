@@ -5,6 +5,7 @@ using UnityEngine.AI;
 
 public class PetBehaviour : MonoBehaviour
 {
+    [Header("Movement")]
     public float minZ = 0, maxZ = 5, minX = -5, maxX = 5;
     NavMeshAgent agent;
 
@@ -13,6 +14,11 @@ public class PetBehaviour : MonoBehaviour
         //Random movement in the set coordinates
         agent = GetComponent<NavMeshAgent>();
         StartCoroutine(Move());
+    }
+
+    private void Update()
+    {
+        
     }
 
     IEnumerator Move()
@@ -33,4 +39,9 @@ public class PetBehaviour : MonoBehaviour
         return new Vector3(Random.Range(minX, maxX), 0, Random.Range(minZ, maxZ));
     }
 
+    //if in washing mode, go to center of room
+    void MoveToCentre()
+    {
+
+    }
 }

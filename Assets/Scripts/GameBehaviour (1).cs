@@ -4,10 +4,7 @@ using UnityEngine;
 public class GameBehaviour : Behaviour
 {
     //Project Specific
-    protected static GameManager _GM { get { return GameManager.Instance; } }
-
-
-    public enum GameState { Title, Instruction, Playing, Pause, GameOver }
+    protected static PetManager _PM { get { return PetManager.Instance; } }
 
 }
 
