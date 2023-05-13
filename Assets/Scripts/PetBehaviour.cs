@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class PetBehaviour : MonoBehaviour
+public class PetBehaviour : GameBehaviour<PetBehaviour>
 {
     [Header("Movement")]
     public float minZ = 0, maxZ = 5, minX = -5, maxX = 5;
@@ -18,7 +18,7 @@ public class PetBehaviour : MonoBehaviour
 
     private void Update()
     {
-        
+        //position should be at 0, 0, 0 when returning to this room
     }
 
     IEnumerator Move()
@@ -39,8 +39,20 @@ public class PetBehaviour : MonoBehaviour
         return new Vector3(Random.Range(minX, maxX), 0, Random.Range(minZ, maxZ));
     }
 
-    //if in washing mode, go to center of room
+    //if in washing mode, go to bathroom and sit there
     void Washing()
+    {
+
+    }
+
+    //if feeding, go to kitchen
+    void Feeding()
+    {
+
+    }
+
+    //if playing go to other side of the room to play pong
+    void Playing()
     {
 
     }

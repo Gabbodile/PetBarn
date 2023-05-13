@@ -62,8 +62,9 @@
     <Compile Include="Assets\Scripts\CustomPet.cs" />
     <Compile Include="Assets\Scripts\MouseMove.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
-    <Compile Include="Assets\Scripts\Behaviour.cs" />
     <Compile Include="Assets\Scripts\PetManager.cs" />
+    <Compile Include="Assets\Scripts\Behaviour.cs" />
+    <Compile Include="Assets\Scripts\BarController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

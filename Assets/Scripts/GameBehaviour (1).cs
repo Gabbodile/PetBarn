@@ -1,11 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class GameBehaviour : Behaviour
+public class GameBehaviour : MJ.Behaviour
 {
     //Project Specific
-    //protected static PetManager _PM { get { return PetManager.Instance; } }
-    //protected static PetBehaviour _PB { get { return PetBehaviour.Instance; } }
+    protected static PetManager _PM { get { return PetManager.Instance; } }
+    protected static PetBehaviour _PB { get { return PetBehaviour.Instance; } }
+    protected static BarController _slider { get { return BarController.Instance; } }
 }
 
 //
