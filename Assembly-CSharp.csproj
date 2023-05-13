@@ -59,16 +59,19 @@
     <Compile Include="Assets\Scripts\Pong\Ball.cs" />
     <Compile Include="Assets\Scripts\BarController.cs" />
     <Compile Include="Assets\Scripts\Pong\FirePoint.cs" />
+    <Compile Include="Assets\Scripts\Pong\EnemyPaddle.cs" />
     <Compile Include="Assets\Scripts\GameBehaviour (1).cs" />
     <Compile Include="Assets\Scripts\PetBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Pong\PlayerPaddle.cs" />
     <Compile Include="Assets\Scripts\PauseController.cs" />
     <Compile Include="Assets\Scripts\CustomPet.cs" />
     <Compile Include="Assets\Scripts\MouseMove.cs" />
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\PetManager.cs" />
     <Compile Include="Assets\Scripts\Behaviour.cs" />
-    <Compile Include="Assets\Scripts\Pong\PlayerPaddle.cs" />
-    <Compile Include="Assets\Scripts\Pong\EnemyPaddle.cs" />
+    <Compile Include="Assets\Scripts\FoodGame\Food.cs" />
+    <Compile Include="Assets\Scripts\FoodGame\GoodFood.cs" />
+    <Compile Include="Assets\Scripts\FoodGame\BadFood.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

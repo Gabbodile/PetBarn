@@ -7,7 +7,6 @@ public class GameBehaviour : MJ.Behaviour
     protected static PetManager _PM { get { return PetManager.Instance; } }
     protected static PetBehaviour _PB { get { return PetBehaviour.Instance; } }
     protected static BarController _slider { get { return BarController.Instance; } }
-
     protected static FirePoint _FP { get { return FirePoint.Instance; } }
 }
 

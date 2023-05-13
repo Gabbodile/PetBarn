@@ -8,24 +8,29 @@ public class PetManager : GameBehaviour<PetManager>
     public Gamemode gamemode;
     public GameObject[] cameras;
 
+    [Header("GameObjects")]
+    public GameObject pong;
+    public GameObject pet;
+
     void Start()
     {
         ChangeCameras();
+        pong.SetActive(false);
     }
 
     void Update()
     {
-        //if (Input.GetKeyDown(KeyCode.Alpha1))
-            //ChangeGamemode(Gamemode.Default);
-
-        //if (Input.GetKeyDown(KeyCode.Alpha2))
-        //    ChangeGamemode(Gamemode.Washing);
-
-        //if (Input.GetKeyDown(KeyCode.Alpha3))
-        //    ChangeGamemode(Gamemode.Feeding);
-
-        //if (Input.GetKeyDown(KeyCode.Alpha4))
-        //    ChangeGamemode(Gamemode.Playing);
+        if (gamemode == Gamemode.Default)
+        {
+            pet.SetActive(true);
+            pong.SetActive(false);
+        }
+        if (gamemode == Gamemode.Washing)
+            pet.SetActive(false);
+        if (gamemode == Gamemode.Feeding)
+            pet.SetActive(false);
+        if (gamemode == Gamemode.Playing)
+            pet.SetActive(false);
     }
 
     public void DefaultCam()
@@ -45,6 +50,7 @@ public class PetManager : GameBehaviour<PetManager>
     public void PlayCam()
     {
         ChangeGamemode(Gamemode.Playing);
+        pong.SetActive(true);
     }
 
     public void HuntingCam()

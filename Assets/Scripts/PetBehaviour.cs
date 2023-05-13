@@ -51,9 +51,4 @@ public class PetBehaviour : GameBehaviour<PetBehaviour>
 
     }
 
-    //if playing go to other side of the room to play pong
-    void Playing()
-    {
-
-    }
 }

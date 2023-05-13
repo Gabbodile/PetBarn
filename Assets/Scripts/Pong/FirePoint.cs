@@ -10,13 +10,14 @@ public class FirePoint : GameBehaviour<FirePoint>
 
     void Start()
     {
-
+       
     }
 
     private void Update()
     {
-        if (ballSpawned == false)
-            ThrowBall(1);
+        if(_PM.gamemode == PetManager.Gamemode.Playing)
+            if (ballSpawned == false)
+                ThrowBall(1);
     }
 
     void ThrowBall(int ballsSpawned)

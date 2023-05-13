@@ -7,6 +7,10 @@ TagManager:
   - PlayerWall
   - PetWall
   - FoodFloor
+  - Ball
+  - Paddle
+  - GoodFood
+  - BadFood
   layers:
   - Default
   - TransparentFX
@@ -14,7 +18,7 @@ TagManager:
   - Ground
   - Water
   - UI
-  - 
+  - Ball
   - 
   - 
   - 
