@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FirePoint : MonoBehaviour
+public class FirePoint : GameBehaviour<FirePoint>
 {
     public GameObject ballPrefab;
     public float ballSpeed = 1000f;
