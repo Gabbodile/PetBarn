@@ -16,7 +16,7 @@ public class PetManager : GameBehaviour<PetManager>
     void Update()
     {
         //if (Input.GetKeyDown(KeyCode.Alpha1))
-            ChangeGamemode(Gamemode.Default);
+            //ChangeGamemode(Gamemode.Default);
 
         //if (Input.GetKeyDown(KeyCode.Alpha2))
         //    ChangeGamemode(Gamemode.Washing);

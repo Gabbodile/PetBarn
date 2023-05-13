@@ -56,6 +56,7 @@
     <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\BarController.cs" />
     <Compile Include="Assets\Scripts\GameBehaviour (1).cs" />
     <Compile Include="Assets\Scripts\PetBehaviour.cs" />
     <Compile Include="Assets\Scripts\PauseController.cs" />
@@ -64,7 +65,8 @@
     <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\Scripts\PetManager.cs" />
     <Compile Include="Assets\Scripts\Behaviour.cs" />
-    <Compile Include="Assets\Scripts\BarController.cs" />
+    <Compile Include="Assets\Scripts\Pong\Ball.cs" />
+    <Compile Include="Assets\Scripts\Pong\FirePoint.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

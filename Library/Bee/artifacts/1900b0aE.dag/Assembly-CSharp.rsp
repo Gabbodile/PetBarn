@@ -362,6 +362,8 @@
 "Assets/Scripts/PauseController.cs"
 "Assets/Scripts/PetBehaviour.cs"
 "Assets/Scripts/PetManager.cs"
+"Assets/Scripts/Pong/Ball.cs"
+"Assets/Scripts/Pong/FirePoint.cs"
 "Assets/Scripts/SceneController.cs"
 -langversion:9.0
 
