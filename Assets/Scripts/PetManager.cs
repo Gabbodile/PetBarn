@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PetManager : GameBehaviour<PetManager>
+public class PetManager : MonoBehaviour
 {
     public enum Gamemode { Default, Washing, Feeding, Playing }
     public Gamemode gamemode;
@@ -12,18 +12,18 @@ public class PetManager : GameBehaviour<PetManager>
     {
         ChangeCameras();
     }
-   
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
             ChangeGamemode(Gamemode.Default);
-        
+
         if (Input.GetKeyDown(KeyCode.Alpha2))
             ChangeGamemode(Gamemode.Washing);
-        
+
         if (Input.GetKeyDown(KeyCode.Alpha3))
             ChangeGamemode(Gamemode.Feeding);
-        
+
         if (Input.GetKeyDown(KeyCode.Alpha4))
             ChangeGamemode(Gamemode.Playing);
     }
@@ -42,5 +42,4 @@ public class PetManager : GameBehaviour<PetManager>
         }
         cameras[(int)gamemode].gameObject.SetActive(true);
     }
-
 }

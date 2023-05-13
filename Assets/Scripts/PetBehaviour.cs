@@ -40,7 +40,7 @@ public class PetBehaviour : MonoBehaviour
     }
 
     //if in washing mode, go to center of room
-    void MoveToCentre()
+    void Washing()
     {
 
     }

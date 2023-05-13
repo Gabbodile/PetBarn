@@ -8,8 +8,7 @@ public class CustomPet : MonoBehaviour
     //This script customises player Colours
     public Renderer playerColour;
     public GameObject player;
-    public GameObject UI;
-    public Image UIColour;
+    public GameObject[] walls;
 
     int colorValue;
     [SerializeField] Color newColour;
@@ -18,7 +17,6 @@ public class CustomPet : MonoBehaviour
     void Start()
     {
         playerColour = player.GetComponent<Renderer>();
-        UIColour = UI.GetComponent<Image>();
     }
 
     //Cycles through colours
@@ -31,6 +29,18 @@ public class CustomPet : MonoBehaviour
         }
 
         playerColour.material.color = colours[colorValue];
-        UIColour.material.color = colours[colorValue];
+
+    }
+
+    public void ChangeWallColour()
+    {
+        colorValue++;
+        if (colorValue > 8)
+        {
+            colorValue = 0;
+        }
+
+        foreach (GameObject walls in walls)
+            walls.GetComponent<Renderer>().sharedMaterial.color = colours[colorValue];
     }
 }

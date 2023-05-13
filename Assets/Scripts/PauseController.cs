@@ -12,7 +12,7 @@ public class PauseController : GameBehaviour
         pausePanel.SetActive(false);
         isPaused = false;
         Time.timeScale = 1;
-        _GM.gameState = GameState.Playing;
+        //_GM.gameState = GameState.Playing;
     }
 
     void Update()
@@ -27,6 +27,6 @@ public class PauseController : GameBehaviour
         pausePanel.SetActive(isPaused);
         Time.timeScale = isPaused ? 0 : 1;
         Cursor.lockState = isPaused ? CursorLockMode.None : CursorLockMode.Locked;
-        _GM.gameState = isPaused ? GameState.Pause : GameState.Playing;
+        //_GM.gameState = isPaused ? GameState.Pause : GameState.Playing;
     }
 }

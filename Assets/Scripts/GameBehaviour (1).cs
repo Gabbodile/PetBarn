@@ -4,8 +4,8 @@ using UnityEngine;
 public class GameBehaviour : Behaviour
 {
     //Project Specific
-    protected static PetManager _PM { get { return PetManager.Instance; } }
-
+    //protected static PetManager _PM { get { return PetManager.Instance; } }
+    //protected static PetBehaviour _PB { get { return PetBehaviour.Instance; } }
 }
 
 //
